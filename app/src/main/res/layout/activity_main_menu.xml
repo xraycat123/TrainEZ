@@ -27,8 +27,10 @@
         android:layout_marginTop="120dp"
         android:background="@drawable/bluebuttonstyle"
         android:onClick="composeProgrammeButtonClicked"
+        android:scaleType="fitXY"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Contac" />
+        app:layout_constraintTop_toBottomOf="@+id/Contac"
+        app:srcCompat="@drawable/myprogramme" />
 
     <ImageButton
         android:id="@+id/weight_menu_button"
@@ -39,9 +41,11 @@
         android:layout_marginTop="48dp"
         android:background="@drawable/bluebuttonstyle"
         android:onClick="enterWeightButtonClicked"
+        android:scaleType="centerCrop"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/myweight" />
 
     <ImageButton
         android:id="@+id/start_menu_button"
@@ -51,13 +55,13 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="168dp"
         android:background="@drawable/bluebuttonstyle"
-        android:elevation="0dp"
+        android:elevation="2dp"
         android:onClick="playProgrammeButtonClicked"
         android:scaleType="fitCenter"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/weight_menu_text"
-        app:srcCompat="@drawable/statmaintest" />
+        app:srcCompat="@android:drawable/ic_media_play" />
 
     <ImageButton
         android:id="@+id/stat_menu_button"
@@ -67,8 +71,10 @@
         android:layout_marginTop="120dp"
         android:background="@drawable/bluebuttonstyle"
         android:onClick="viewStatisticsButtonClicked"
+        android:scaleType="fitCenter"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/statmaintest" />
 
     <TextView
         android:id="@+id/weight_menu_text"
