@@ -13,6 +13,7 @@
     <string name="my_progress">My progress</string>
     <string name="weight">Weight</string>
     <string name="help">Help</string>
+    <string name="Contact">Contact</string>
     <string name="start_program">Start Program</string>
     <string name="my_program">My program</string>
 </resources>

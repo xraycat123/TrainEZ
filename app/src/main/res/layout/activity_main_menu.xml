@@ -21,29 +21,27 @@
 
     <ImageButton
         android:id="@+id/compose_menu_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_marginLeft="16dp"
-        android:background="#FFFFFF"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/bluebuttonstyle"
         android:onClick="composeProgrammeButtonClicked"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:srcCompat="@drawable/myprogramme"
-        android:layout_marginTop="120dp"
         app:layout_constraintTop_toBottomOf="@+id/Contac" />
 
     <ImageButton
         android:id="@+id/weight_menu_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:background="#FFFFFF"
-        android:onClick="enterWeightButtonClicked"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bodyweight"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bluebuttonstyle"
+        android:onClick="enterWeightButtonClicked"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/start_menu_button"
@@ -63,14 +61,13 @@
 
     <ImageButton
         android:id="@+id/stat_menu_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_marginRight="16dp"
-        android:background="#FFFFFF"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/bluebuttonstyle"
         android:onClick="viewStatisticsButtonClicked"
         app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@drawable/statistics"
-        android:layout_marginTop="120dp"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
@@ -93,11 +90,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
-        android:text="Contact"
+        android:text="@string/Contact"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
         android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="6dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
@@ -144,10 +141,12 @@
         android:layout_height="40dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/help_button"
+        android:background="@drawable/whitebuttonstyle"
         android:onClick="helpClickedButton"
+        android:scaleType="centerInside"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/help" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -155,9 +154,11 @@
         android:layout_height="40dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/info_button"
+        android:background="@drawable/whitebuttonstyle"
         android:onClick="contactButtonClicked"
+        android:scaleType="fitCenter"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/contact" />
 
 </android.support.constraint.ConstraintLayout>
