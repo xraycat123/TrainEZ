@@ -33,21 +33,21 @@ public class TrainingProgramme {
         // Make an arraylist. This arraylist is the training program.
         // The listed item has to be sorted by cateogry!
         ArrayList<Exercise> programme = new ArrayList<>();
-        programme.add(new Exercise("Dummy text1", "dummy", 0, "one", 1));
-        programme.add(new Exercise("Dummy pext2", "dummytwo", 0, "one", 2));
-        programme.add(new Exercise("Dummy pexta3", "dummythree", 0, "one", 3));
-        programme.add(new Exercise("Dummy pexta4", "dummyfour", 0, "two", 4));
-        programme.add(new Exercise("Dummy pexta5", "dummyfive", 0, "two", 5));
-        programme.add(new Exercise("Dummy pexta6", "dummysix", 0, "three", 6));
-        programme.add(new Exercise("Dummy pexta7", "dummyseven", 0, "four", 7));
-        programme.add(new Exercise("Dummy pexta8", "dummyeight", 0, "four", 8));
-        programme.add(new Exercise("Dummy pexta9", "dummynine", 0, "four", 9));
-        programme.add(new Exercise("Dummy pexta10", "dummyten", 0, "five", 10));
-        programme.add(new Exercise("Dummy pexta11", "dummyelleven", 0, "five", 11));
-        programme.add(new Exercise("Dummy pexta12", "dummytwelf", 0, "five", 12));
-        programme.add(new Exercise("Dummy pexta13", "dummythirteen", 0, "five", 13));
-        programme.add(new Exercise("Dummy pexta14", "dummyfourteen", 0, "five", 14));
-        programme.add(new Exercise("Dummy pexta15", "dummyfifteen", 0, "six", 15));
+        programme.add(new Exercise("Tongue stretch", "dummy", 0, "Mouth cleaning", 1));
+        programme.add(new Exercise("Tongue in cheek", "dummytwo", 0, "Mouth cleaning", 2));
+        programme.add(new Exercise("Tongue in corners", "dummythree", 0, "Mouth cleaning", 3));
+        programme.add(new Exercise("Tongue on spoon", "dummyfour", 0, "Speaking and saliva", 4));
+        programme.add(new Exercise("Side of tongue on spoon", "dummyfive", 0, "Speaking and saliva", 5));
+        programme.add(new Exercise("Yawning", "dummysix", 0, "Relaxing the neck", 6));
+        programme.add(new Exercise("Jaw to the side", "dummyseven", 0, "Jaw movement", 7));
+        programme.add(new Exercise("Jaw forward", "dummyeight", 0, "Jaw movement", 8));
+        programme.add(new Exercise("Breathing", "dummynine", 0, "Swallowing", 9));
+        programme.add(new Exercise("Chair lifting", "dummyten", 0, "Swallowing", 10));
+        programme.add(new Exercise("Head turning", "dummyelleven", 0, "Swallowing", 11));
+        programme.add(new Exercise("Swallowing normally", "dummytwelf", 0, "Swallowing", 12));
+        programme.add(new Exercise("Tongue between teeth", "dummythirteen", 0, "Swallowing", 13));
+        programme.add(new Exercise("Forceful swallow", "dummyfourteen", 0, "Efficient swallowing", 14));
+        programme.add(new Exercise("Lay on back", "dummyfifteen", 0, "Efficient swallowing", 15));
 
 
 

@@ -68,16 +68,17 @@ public class WeightStatFragment extends Fragment {
         // create a dataset and give it a type
         LineDataSet set1 = new LineDataSet(values, "My weight data");
         set1.setAxisDependency(YAxis.AxisDependency.LEFT);
-        set1.setColor(ColorTemplate.getHoloBlue());
+        set1.setColor(Color.rgb(11,54,89));
         set1.setValueTextColor(ColorTemplate.getHoloBlue());
         set1.setLineWidth(1.5f);
         set1.setDrawCircles(true);
             set1.setCircleRadius(4.5f);
         set1.setDrawValues(false);
         set1.setFillAlpha(65);
-        set1.setFillColor(ColorTemplate.getHoloBlue());
+        set1.setFillColor(Color.rgb(7,104,133));
         set1.setHighLightColor(Color.rgb(244, 117, 117));
-        set1.setDrawCircleHole(false);
+        set1.setDrawCircleHole(true);
+            set1.setCircleColors(Color.rgb(7,104,133));
         // create a data object with the datasets
         LineData data = new LineData(set1);
         // create a dataset and give it a type
@@ -133,19 +134,19 @@ public class WeightStatFragment extends Fragment {
         xAxis.setTextColor(Color.WHITE);
         xAxis.setDrawAxisLine(false);
         xAxis.setDrawGridLines(true);
-        xAxis.setTextColor(Color.rgb(255, 192, 56));
+        xAxis.setTextColor(Color.rgb(77, 77, 77));
         xAxis.setCenterAxisLabels(true);
         YAxis leftAxis = mChart.getAxisLeft();
         leftAxis.setPosition(YAxis.YAxisLabelPosition.INSIDE_CHART);
         leftAxis.setTypeface(mTfLight);
-        leftAxis.setTextColor(ColorTemplate.getHoloBlue());
+        leftAxis.setTextColor(Color.rgb(77, 77, 77));
         leftAxis.setTextSize(11);
         leftAxis.setDrawGridLines(true);
         leftAxis.setGranularityEnabled(true);
         leftAxis.setAxisMinimum(30f);
         leftAxis.setAxisMaximum(120f);
         leftAxis.setYOffset(-9f);
-        leftAxis.setTextColor(Color.rgb(255, 192, 56));
+        leftAxis.setTextColor(Color.rgb(77, 77, 77));
         YAxis rightAxis = mChart.getAxisRight();
         rightAxis.setEnabled(false);
     }

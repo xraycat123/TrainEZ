@@ -38,7 +38,9 @@
             android:name=".PopHelp"
             android:theme="@style/AppTheme.CustomTheme" />
         <activity android:name=".EnterWeightActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            />
         <activity android:name=".PlayProgrammeActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".ViewStatisticsActivity"

@@ -38,7 +38,8 @@ public class ViewStatisticsActivity extends AppCompatActivity {
     }
 
 
-    void saveToTxtClicked(View view) {
+public void saveToTxtClicked(View view) {
+
         DbHandler dbHandler = new DbHandler(this, null, null, 1);
         String exercises = dbHandler.databaseToStringExercise();
         SDTextWriter exerciseWriter = new SDTextWriter("exercise_data.txt", exercises, this.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS));
@@ -55,7 +56,7 @@ public class ViewStatisticsActivity extends AppCompatActivity {
     }
 
 
-    void backToMain(View view){
+    public void backToMainMenu(View view){
         finish();
     }
 

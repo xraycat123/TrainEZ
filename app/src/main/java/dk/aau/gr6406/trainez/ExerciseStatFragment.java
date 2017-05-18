@@ -49,8 +49,13 @@ public class ExerciseStatFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_exercise_stat, container, false);
-        addItemsToSpinner(nonZeroDbColumns());
-        showGraph();
+        try{
+            addItemsToSpinner(nonZeroDbColumns());
+            showGraph();
+        }catch(Exception e){
+
+        }
+
         Log.i(TAG, "nonzero" + String.valueOf(nonZeroDbColumns()));
         return rootView;
     }

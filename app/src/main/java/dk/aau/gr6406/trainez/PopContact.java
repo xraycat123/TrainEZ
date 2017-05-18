@@ -5,6 +5,9 @@ package dk.aau.gr6406.trainez;
  */
 
 import android.app.Activity;
+import android.content.Intent;
+import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -30,7 +33,20 @@ public class PopContact extends Activity {
         c.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+
                 finish();
+            }
+        });
+
+
+        ImageButton visitRn = (ImageButton) findViewById(R.id.visitrn);
+        visitRn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "http://www.rn.dk";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
             }
         });
     }

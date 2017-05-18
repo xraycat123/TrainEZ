@@ -42,25 +42,27 @@
 
     <ImageButton
         android:id="@+id/playtraining_plus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/textView3"
         android:layout_marginTop="40dp"
         android:background="#FFFFFF"
         android:padding="5dp"
-        app:srcCompat="@drawable/plus" />
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/plus_button" />
 
     <ImageButton
         android:id="@+id/playtraining_minus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/playtraining_plus"
         android:layout_marginTop="16dp"
         android:background="#FFFFFF"
         android:padding="5dp"
-        app:srcCompat="@drawable/minus" />
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/minus_button" />
 
     <TextView
         android:id="@+id/textView3"

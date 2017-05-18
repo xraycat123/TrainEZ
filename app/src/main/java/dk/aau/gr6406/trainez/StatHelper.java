@@ -134,6 +134,7 @@ public class StatHelper {
         LineDataSet d1 = new LineDataSet(e1, "Exercise " + exerciseName);
         d1.setLineWidth(2.5f);
         d1.setCircleRadius(4.5f);
+        d1.setCircleColors(Color.rgb(7,104,133));
         Random rnd = new Random();
         d1.setColor(Color.rgb(rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256)));
         d1.setHighLightColor(Color.rgb(244, 117, 117));

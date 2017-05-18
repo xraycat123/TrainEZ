@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
 
-    android:background="@color/pblue"
+    android:background="#ccc9c4"
     android:orientation="horizontal">
 
 
@@ -22,7 +22,7 @@
         android:lines="1"
         android:maxLines="1"
         android:text="ds"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
 
     <ImageButton

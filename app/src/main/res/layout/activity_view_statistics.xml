@@ -36,7 +36,7 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:background="#076885"
-            android:onClick="backToMain"
+            android:onClick="backToMainMenu"
             android:scaleType="fitCenter"
             android:src="@drawable/home_button" />
 

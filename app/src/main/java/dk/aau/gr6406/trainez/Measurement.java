@@ -17,9 +17,11 @@ public class Measurement {
     public Measurement(){
     }
 
+    /*
     public Measurement(String personID){
         this._personID=personID;
     }
+    */
 
     public int get_id() {
         return _id;

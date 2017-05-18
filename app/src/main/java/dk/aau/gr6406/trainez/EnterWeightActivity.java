@@ -71,6 +71,7 @@ public class EnterWeightActivity extends AppCompatActivity {
      * @param view
      */
     public void goBackButtonClicked(View view) {
+        Toast.makeText(EnterWeightActivity.this, "No weight registred",Toast.LENGTH_LONG).show();
         finish();
     }
 
