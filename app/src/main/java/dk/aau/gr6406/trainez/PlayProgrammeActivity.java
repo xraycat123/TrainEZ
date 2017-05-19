@@ -72,7 +72,7 @@ public class PlayProgrammeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_programme);
         // Receive the choses exercises in an arraylist (Created in menuactivity in OnResume())
-        //contextOfApplication = getApplicationContext();lo
+        //contextOfApplication = getApplicationContext();
         getSharedPreferences("repInfo", 0).edit().clear().commit();
         // prepare the video layout
         videov = (VideoView) findViewById(R.id.videoView);
@@ -330,8 +330,8 @@ public class PlayProgrammeActivity extends AppCompatActivity {
             videov.getLayoutParams().width = RelativeLayout.LayoutParams.MATCH_PARENT;
             windowSize = false;
         } else {
-            videov.getLayoutParams().height = (int) pixels;
-            videov.getLayoutParams().width = (int) pixels2;
+            videov.getLayoutParams().height = pixels;
+            videov.getLayoutParams().width = pixels2;
             windowSize = true;
         }
 
@@ -340,7 +340,7 @@ public class PlayProgrammeActivity extends AppCompatActivity {
         videov.setLayoutParams(params);
         camera_view.setVisibility(View.GONE);
         ((View) videov.getParent()).invalidate();
-        ((View) videov.getParent()).requestLayout();
+        videov.getParent().requestLayout();
         camera_view.setVisibility(View.VISIBLE);
     }
 }
