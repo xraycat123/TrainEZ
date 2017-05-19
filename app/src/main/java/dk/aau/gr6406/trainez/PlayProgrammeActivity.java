@@ -96,7 +96,6 @@ public class PlayProgrammeActivity extends AppCompatActivity {
     public void nextButtonClicked(View view) {
         getCurrentExercise();
         Log.i(TAG, "nextButtonClicked");
-
     }
 
     private void getCurrentExercise(){
