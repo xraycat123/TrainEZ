@@ -39,7 +39,9 @@ tools:context="dk.aau.gr6406.trainez.EnterWeightActivity">
     app:layout_constraintTop_toTopOf="parent"
     tools:layout_editor_absoluteX="57dp" />
 
-<include layout="@layout/bottom_menu" />
+<include layout="@layout/bottom_menu"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/kilo_text_enter_weight"

@@ -21,21 +21,15 @@ tools:context="dk.aau.gr6406.trainez.PlayProgrammeActivity">
 
     <ImageButton
         android:id="@+id/imgClose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
         android:layout_gravity="bottom|left"
-        android:background="@android:drawable/ic_menu_myplaces"
+        android:background="@drawable/whitebuttonstyle"
         android:nestedScrollingEnabled="false"
         android:onClick="backToMainMenu"
-        android:padding="20dp" />
-
-    <ImageButton
-        android:id="@+id/imgNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
-        android:background="@android:drawable/ic_media_play"
-        android:onClick="nextButtonClicked" />
+        android:padding="20dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/home" />
 
     <ImageButton
         android:id="@+id/changeSize"
@@ -44,5 +38,15 @@ tools:context="dk.aau.gr6406.trainez.PlayProgrammeActivity">
         android:layout_gravity="top|left"
         android:background="@android:drawable/ic_menu_view"
         android:onClick="videoFrameClicked" />
+
+    <ImageButton
+        android:id="@+id/imgNext"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/whitebuttonstyle"
+        android:onClick="nextButtonClicked"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/next" />
 
 </FrameLayout>
