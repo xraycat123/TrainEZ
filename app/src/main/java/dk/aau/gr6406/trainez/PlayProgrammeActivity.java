@@ -72,7 +72,7 @@ public class PlayProgrammeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_programme);
         // Receive the choses exercises in an arraylist (Created in menuactivity in OnResume())
-        //contextOfApplication = getApplicationContext();
+        //contextOfApplication = getApplicationContext();l
         getSharedPreferences("repInfo", 0).edit().clear().commit();
         // prepare the video layout
         videov = (VideoView) findViewById(R.id.videoView);
